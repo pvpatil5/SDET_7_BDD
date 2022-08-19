@@ -1,7 +1,7 @@
 Feature: To test the login functionality
  
 Scenario: Login to app with valid credential
- Given launch browser
+ Given Launch browser
  Then enter URL
  Then validated login page is displayed or not
  And enter username 
@@ -10,7 +10,7 @@ Scenario: Login to app with valid credential
  Then home page should display
 
 Scenario: Login to app with invalid credential
-Given launch browser
+Given Launch browser
  Then enter URL
  Then validated login page is displayed or not
  And enter username "admin" 
@@ -19,7 +19,7 @@ Given launch browser
  Then home page should display
 
 Scenario: After entering wrong UN and PWD check error msg is diaplayed or not
-Given launch browser
+Given Launch browser
  Then enter URL
  Then validated login page is displayed or not
  And enter username "admin" 

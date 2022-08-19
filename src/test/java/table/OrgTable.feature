@@ -1,7 +1,7 @@
-Feature: Organization
+Feature: 
+  To create org
 
-  Scenario Outline: 
-  
+  Scenario Outline:  To create org with orgname, mono,mailId
 
     Given Launch browser
     And enterURL "http://localhost:8888"
@@ -12,15 +12,10 @@ Feature: Organization
     And verify the homepage title
     Then click on organizationlink
     And click on createorganization img
-    Then enterorgname "<orgname>"
-    And enter phonenumber "<phonenumber>"
+    Then create org with name mobile and mailid
+      | APEEJAY33 | 456789 | apj@tyss.com |
+      | APEEJAY13 | 456789 | apj@tyss.com |
+      | APEEJAY32 | 456789 | apj@tyss.com |
     Then save the organization
     And logout from the application
     Then close the browser
-
-    Examples: 
-      | orgname       |  | phonenumber |
-      | Google_HYD    |  |       12345 |
-      | Microsoft_HYD |  |       77777 |
-      | Facebook_HYD  |  |       78910 |
-      | IBM_HYD       |  |       45758 |
